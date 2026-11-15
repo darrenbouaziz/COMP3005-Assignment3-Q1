@@ -4,15 +4,15 @@ This is a Python program that connects to PostgreSQL and lets you view, add, upd
 
 ## Files
 
-- `app/main.py` - Python program with the four student functions and a menu
-- `database/01_create_students.sql` - SQL script to create the table and insert the three starting students
+- `main.py` - Python program with the four student functions and a menu
+- `01_create_students.sql` - SQL script to create the table and insert the three starting students
 - `requirements.txt` - Python package needed for the database connection
 
 ## Database setup
 
 1. Open PostgreSQL in pgAdmin and create a database named `assignment3`.
 2. Select the `assignment3` database and open **Tools > Query Tool**.
-3. Run the SQL in `database/01_create_students.sql`.
+3. Run the SQL in `01_create_students.sql`.
 4. Check the students table in pgAdmin. It should include John Doe, Jane Smith, and Jim Beam.
 
 The table uses an automatically generated primary key (`student_id`), required first and last names, a unique email, and an enrollment date.
@@ -42,7 +42,7 @@ $env:DB_PORT = "5432"
 Start the program with:
 
 ```powershell
-py app/main.py
+py main.py
 ```
 
 Enter the PostgreSQL password when prompted. The menu has these options:
